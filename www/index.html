@@ -1,0 +1,523 @@
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+	<title>Foot Platform</title>
+	<meta charset="UTF-8">
+	<!--    <meta property="og:url" content="https://">  -->
+	<meta property="og:type"               content="website">
+	<meta property="og:title"              content="Plateforme Football">
+	<meta property="og:description"        content="">
+	<meta http-equiv="Cache-control" content="no-cache">
+	<!--    <meta property="og:image"              content="https://">-->
+	<meta property="og:image:width" content="60">
+	<meta property="og:image:height" content="50">
+	<meta name="description" content="Plateforme Football">
+	<meta name="viewport" content="width=799, initial-scale=.5">
+	<link href="datepicker/datepicker.css" rel="stylesheet" type="text/css">
+	<link href="bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="index.css?<?php echo time(); ?>">
+	<link type="text/css" rel="stylesheet" href="jsgrid/jsgrid.min.css" />
+	<link type="text/css" rel="stylesheet" href="jsgrid/jsgrid-theme.min.css" />
+	
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-transparent text-light hidden" id="navmenu" style="background-color: #4CA1F1 ;">
+		<h3 class="bold" style="color: white;">Football<br>Global<br>Strategy</h3>
+		<button class="btn btn2 fakenav2" onclick="$('#navmenu').hide();showCompte($('#moncompte'));window.scroll(0,0);ui_click('home')" style="left:30%;" id="home1"> HOME </button>
+		<button class="btn btn2 fakenav2" onclick="about()" style="left:50%;"  id="home2">ABOUT</button>
+		<button class="btn btn2 fakenav2" onclick="ui_click('contact')" style="left:70%;"  id="home3">CONTACT</button>
+
+		<button class="btn btn2 fakenav2 dropdown-toggle hidden" type="button" id="btn-mapage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MON ESPACE
+			<div class="dropdown-menu" aria-labelledby="btn-mapage" >
+				<a class="dropdown-item" href="#" style="color: #4CA1F1; font-weight: bold;" onclick='showCompte($("#moncompte"));'>Mon compte</a>
+				<a class="dropdown-item" href="#" style="color: #4CA1F1; font-weight: bold;" onclick='showCompte($("#fonctions"));'>Mes fonctionnalités</a>
+			</div>
+		</button>
+	</nav>
+
+	<div id="homecontent" class="centre hide">
+		<div style="height: 100%; background-image: url('images/test.png');background-repeat: no-repeat;">
+			<button class="btn btn1 fakenav" onclick="about()" style="left:50%;"> ABOUT </button>
+			<button class="btn btn1 fakenav" onclick="$('#navmenu').show();ui_click('faq')"style="left:65%">CONTACT</button>
+			<button class="btn btn1 fakenav" onclick="$('#navmenu').show();ui_click('newaccount')" style="left:80%;">S'INSCRIRE</button>
+
+			<div style="position: absolute; left : 2%;top:10px; font-size: 30; font-weight: bold;color : white;"> Football<br>Global<br>Strategy </div>
+
+			<div style="position: absolute;top: 40%; left : 100px;">
+				<div style="font-size: 27;font-weight: bold; color:white;"> La première plateforme destinée <br>à mutualiser les informations entre <br> clubs et avec les investisseurs.<br></div><br><br>
+				<button class="btn btnstart bold"  onclick="$('#navmenu').show();ui_click('log')"> 
+					<img src="images/start.png">
+				Commencer </button>
+			</div>
+		</div>
+		<div style="width : 100%;background-color: #4DB2F5;"  id="div-ccm"><br>
+			<div style="font-size: 30; font-weight: bold;color : #483BDD; margin:auto;width:100%;"> 
+				Notre but ?
+			</div><br>
+			<div style=" font-size: 23; font-weight: bold;color : white; margin:auto;width:80%;"> 
+				<p>Simplifier et centraliser les échanges entre les différents acteurs du marché du football.</p>
+				<img src="images/group.png"style="margin:auto;">
+				<br> <p> Football Global Strategy est une plateforme de mise en commun entre clubs membres pour la demande ou recherche de joueurs sur le marché, ainsi qu'avec les investisseurs potentiels lors des opérations de capitalisation ou sponsoring. </p> 
+			</div><br><br><br>
+
+
+			<div style=" font-size: 30; font-weight: bold; margin: auto;width:100%; color:#483BDD;"> Comment ça marche ?</div><br>
+			<div style="margin: auto;width:80%; font-size: 23; color:white;font-weight: bold;">
+				<p>Chaque dossier de sponsoring, capitalisation, vente ou recherche de joueur est traité par la plateforme sous forme d'un cahier de charge faisant intervenir toutes les parties prenantes en amont (joueur, agent, club, autre responsable). <br><br>Cette innovation facilite et fluidifie les recherches pour les autres clubs ou investisseurs membres en regroupant toutes les informations qualifiées collectées. </p><br><br>
+			</div>
+		</div>
+		<div style="height: 100%; border-bottom: dashed #4DB2F5 10px;">
+			<div style="width : 50%; float:left;margin-top: 50vh;transform: translateY(-50%);">
+				<h3 style="font-weight: bold;" >Offre/Demande de joueur</h3><br>
+				<p style="font-size: 19; text-align: left;margin-left: 50px; color :#4DB2F5;font-weight: bold; ">Un club peut émettre une offre de joueur sur le marché en spécifiant le profil du joueur et les conditions économiques souhaitées.<br>Si un club ne trouve pas une offre de joueur correspondant à ses critères, il peut émettre un cahier de recherche en détaillant le profil technique voulu ainsi que les avantages économiques et matériels à disposition.</p>
+			</div>
+			<div style="width : 50%; float:right;margin-top: 50vh;transform: translateY(-50%);">
+				<img src="images/cdc2.png" >
+			</div>
+		</div>
+		<div style="height: 100%; border-bottom: dashed #4952E2 10px;">
+			<div style="width : 50%;float : right;margin-top: 50vh;transform: translateY(-50%);">
+				<h3 style="font-weight: bold;margin-right: 30px;">Recherche/Proposition d'entrée en capital</h3><br>
+				<p style="font-size: 19; text-align: left;color :#4952E2;font-weight: bold; margin-right: 50px;"> Pour les opérations de capitalisation, un club peut écrire un cahier précisant le nombre de parts qu'il est prêt à céder à un investisseur ou toute autre condition. <br>Si un investisseur ne trouve pas de contrat convenant à ses critères, il peut rédiger une proposition d'entrée en capital avec ses propres termes.</p>
+			</div>
+			<div style="width : 50%; float:left;margin-top: 50vh;transform: translateY(-50%);">
+				<img src="images/cdc.png">
+			</div>
+		</div>
+		<div style="height: 100%; border-bottom: dashed #8D49E2 10px;">
+			<div style="width : 50%; float: left;margin-top: 50vh;transform: translateY(-50%);">
+				<h3 style="font-weight: bold;">Recherche/Proposition de sponsoring</h3><br>
+				<p style="font-size: 19;  text-align: left;margin-left: 50px;color :#8D49E2;font-weight: bold;">Enfin sur le même principe lors des opérations de sponsoring, un club peut écrire un cahier définissant les conditions d'un contrat de sponsoring (naming de stade, visibilité sur tribunes/loges/panneaux fixes et mobiles etc) à destination des membres investisseurs.<br>Ici, l'investisseur a toujours le choix de rédiger sa propre proposition de contrat de sponsoring avec ses spécifications.</p>
+			</div>
+			<div style="width : 50%; float:right;margin-top: 50vh;transform: translateY(-50%);">
+				<img src="images/actions.png">
+			</div>
+		</div><br><br>
+		<div style="font-weight: bold;text-align: center;">
+			<button class="btn btnsign" onclick="$('#navmenu').show();ui_click('newaccount')">S'inscrire</button>
+			<br><br>
+			© FootballGlobalSociety 2019
+		</div>
+	</div>
+
+	<div id="logcontent" class="hidden hide">
+		<div style="border-radius: 15px;width:250px;height: 300px; margin: auto; text-align: center;margin-top: 50vh;transform: translateY(-50%);">
+			<img src="images/login.png">
+				<div class="form-group">
+					<input type="text" class="form-control mid" id="username" placeholder="Identifiant" style="width : 100%;">
+				</div>
+				<div class="form-group" id="feedlog">
+					<input type="password" class="form-control mid" id="password" placeholder="Mot de passe" style="width : 100%;">
+				</div>
+				<button type="submit" class="btn btn-primary" onclick='getLogin()' style="width : 100%;">LOGIN</button><br><br>
+				<div class="invalid-feedback" id="feedback-login"> Login ou/et mot de passe incorrect(s)</div>
+			<button class="btn btn1 bold" onclick="ui_click('newaccount')"> Créer un compte </button>
+		</div>
+	</div>
+
+	<div id="newaccountcontent" class="hidden hide pad50 centre">
+		<h4>Selectionnez votre type de compte :</h4>
+		<select class='form-control mid' id="select-type-compte">
+			<option value="">Choisissez votre type de compte</option>
+			<option value=1>Investisseur en capital ou sponsoring</option>
+			<option value=2>Club</option>
+		</select>
+		<br><br>
+		<div id="type-club" class="hidden"><br>
+			<h3> Formulaire d'adhésion d'un club à la plateforme Football Global Strategy</h3><br><br>
+			<div class="form-row">
+				<div class='form-group col-md-6'>
+					<label class="bold"> Libellé de votre club </label>
+					<input class='form-control' id='club-name' placeholder='Nom du club'>
+				</div>
+				<div class='form-group col-md-6'>
+					<!-- Upload file for club logo -->
+					<label class="bold"> Insérez le logo de votre club (format JPG, PNG, JPEG)</label>
+					<input type="file" name="fileToUpload" id="fileToUpload">
+					<input type="submit" value="submit" name="submit" onclick="upImg()">
+				</div>
+			</div>
+			<div class="form-row">
+				<div class='form-group col-md-6'>
+					<label class="bold"> N° d'affiliation à la confédération </label>
+					<input class='form-control' id='club-affil' placeholder='Numéro affiliation'>
+				</div>
+				<div class='form-group col-md-6'>
+					<label class="bold"> Ligue où évolue le club </label>
+					<input class='form-control' id='club-ligue' placeholder='Nom de la ligue'>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class='form-group col-md-6'>
+					<label class="bold"> Pays où évolue le club</label>
+					<input class='form-control' id='club-pays' placeholder='Pays du club'>
+				</div>
+				<div class='form-group col-md-6'>
+					<label class="bold"> Catégorie FIFA</label>
+					<input class='form-control' id='club-fifa' placeholder='Catégorie FIFA (1-5)'>
+				</div>
+			</div>
+			<div class='form-group col-md-6 milieu'>
+				<label class="bold">Confédération du club</label>
+				<input class='form-control' id='club-conf' placeholder='Confédération'>
+			</div>
+			<div class="form-row">
+				<div class='form-group col-md-6'>
+					<label>Début de la saison</label>
+					<input data-toggle="datepicker" id="debutsaison" style="width:  100%;text-align: center;">
+				</div>
+				<div class='form-group col-md-6'>
+					<label> Fin de la saison</label>
+					<input data-toggle="datepicker" id="finsaison" style="width:  100%;text-align: center;">
+				</div>
+			</div><br><br>
+			<h3>Information du correspondant du club pour FGS, responsable du paiement</h3>
+			<div class="form-row">
+				<div class='form-group col-md-6'>
+					<label class="bold"> Nom complet </label>
+					<input type="text" id="nom-corres" placeholder="Nom Prénom" class="form-control">
+				</div>
+				<div class='form-group col-md-6'>
+					<label class="bold"> Fonction dans le club</label>
+					<input type="text" id="fonction-corres" placeholder="Qualité du correspondant" class="form-control">
+				</div>
+			</div>
+			<div class="form-row">
+				<div class='form-group col-md-6'>
+					<label class="bold"> Mail</label>
+					<input type="text" id="mail-corres" placeholder="Mail du correspondant" class="form-control">
+				</div>
+				<div class='form-group col-md-6'>
+					<label class="bold"> Telephone</label>
+					<input type="text" id="tel-corres" placeholder="Point de contact du club" class="form-control">
+				</div>
+			</div><br><br>
+			<h3>Veuillez indiquer les 3 utilisateurs du club, responsables de l'émission et gestion des cahiers de charges </h3>
+			<table class='table table-light' id='compte-club'>
+				<thead>
+					<tr class="centre">
+						<th scope='col'> # </th>
+						<th scope='col'> Nom Prénom</th>
+						<th scope='col'> Qualité </th>
+						<th scope='col'> Mail </th>
+						<th scope='col'> Téléphone </th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr> 
+						<th scope='row'> 1</th>
+						<td> <input class='form-control' placeholder='Nom prénom du responsable' id='nom-club1'> </td>
+						<td> <input class='form-control' placeholder='Qualité du responsable' id='qualite-club1'> </td>
+						<td> <input class='form-control' placeholder='Mail du responsable' id='mail-club1'> </td>
+						<td> <input class='form-control' placeholder='Téléphone du responsable' id='tel-club1'> </td>
+					</tr>
+				</tbody>
+			</table>
+			<button class="btn btn-secondary centre" id="add-respo-compte" onclick="newRespo()">Ajouter un responsable</button>
+		</div>
+
+		<div id="type-part" class="hidden">
+			<h3> Formulaire d'adhésion d'un investisseur en capital à la plateforme Football Global Strategy</h3><br><br>
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label class="bold"> Type du compte </label>
+					<select class="form-control" id="select-typepart">
+						<option value=0> Vous représentez</option>
+						<option value="Physique"> Une personne physique </option>
+						<option value="Moral"> Une personne morale </option>
+					</select>
+				</div>
+				<div class='form-group col-md-6'>
+					<label class="bold"> Dénomination de votre structure </label>
+					<input class='form-control' placeholder='Nom de structure' id='nomstructure-part'>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label class="bold"> Nationalité de votre structure</label>
+					<input class='form-control' placeholder='Nationalité' id='nationalite-part'>
+				</div>
+				<div class='form-group col-md-6'>
+					<label class="bold"> Mandat ou non</label>
+					<select class="form-control" id="select-mandat">
+						<option value=0> Vous agissez </option>
+						<option value=1> En votre propre nom</option>
+						<option value=2> En tant que mandataire </option>
+					</select>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label class="bold"> Si vous êtes mandataire, indiquer le nom du mandant</label>
+					<input class='form-control' placeholder='Nom du mandant' id='mandant-part'>
+				</div>
+				<div class='form-group col-md-6'>
+					<label class="bold"> Domaine d'activité</label>
+					<input class='form-control' placeholder='Secteur' id='domaine-part'>
+				</div>
+			</div>
+			<div class='form-group col-md-6 milieu'>
+				<label class="bold"> Mail de contact</label>
+				<input class='form-control' placeholder='Mail @' id='mail-inv'>
+			</div>
+			<br><br>
+			<h3> Informations sur le correspondant pour l'investisseur avec la plateforme FGS</h3><br>
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label class="bold"> Nom du responsable</label>
+					<input class='form-control' placeholder='Nom' id='nom-part'>
+				</div>
+				<div class='form-group col-md-6'>
+					<label class="bold"> Mail du responsable</label>
+					<input class='form-control' placeholder='Mail ' id='mail-part'> 
+				</div>
+			</div>
+			<div class="form-row">
+				<div class='form-group col-md-6'>
+					<label class="bold"> Téléphone du responsable </label>
+					<input class='form-control' placeholder='Téléphone' id='tel-part'> 
+				</div>
+				<div class='form-group col-md-6'>
+					<label class="bold"> Fonction du responsable</label>
+					<input class='form-control' placeholder='Fonction ' id='fct-part'> 
+				</div>
+			</div>
+			<br><br>
+			<h3 id="part-resume"></h3>
+			<textarea class="form-control" id="obj-adhesion" rows="3"></textarea>
+		</div><br><br>
+		<div class='form-row hidden' id="newaccount-logs">
+			<div class='form-group col-md-6'>
+				<label class="bold"> Username </label>
+				<input class='form-control' placeholder='Choisissez votre login' id='login-compte'> 
+			</div>
+			<div class='form-group col-md-6'>
+				<label class="bold"> Mot de passe </label>
+				<input class='form-control' placeholder='Choisissez votre mot de passe' id='pass-compte'> 
+			</div>
+		</div>
+		<div class="form-check hidden" id="newaccount-check">
+			<input type="checkbox" class="form-check-input" id="check-register">
+			<label class="form-check-label" for="check-register">En cochant vous acceptez que la présente adhésion équivaut à l'engagement au respect du Reglement interne de fonctionnement de la Plateforme FGS.</label>
+		</div><br>
+		<button class="btn btn-success hidden" id="btn-newaccount" onclick="registerUser()">REGISTER</button>
+	</div>
+
+	<div id="monespacecontent" class=" hide hidden" style="margin : auto;text-align: center;">
+		<div id="moncompte" class=" hideclub"><br><br>
+			<div id="espace-name" style = "color: #00578A ;" class="bold"></div> <br><br>
+			<table class="table table-dark" id="dashboard-club" style="width: 80%; left: 150px;" border>
+			</table>
+		
+        <h3 for="jsGrid" class="bold"> Derniers cahiers de charges inscrits sur FGS </h3>
+			<div id="bottomdashboard" style="margin:auto;height: 450px;">
+					
+					<div id="jsGrid" style="float:left;margin-left: 5%;"></div>
+                    <div id="jsGrid2" style="float:right;margin-right: 5%;"></div>
+			</div>
+			<button class="btn btn-warning bold" onclick="showCompte($('#fonctions'))"> Mes fonctions </button>
+			</div><br>
+		<div id="fonctions" class="hidden hideclub" style="margin : auto;text-align: center; width : 100%;"><br><br>
+			<h3 style="color: #00578A ;" class="bold"> Vos fonctionnalités </h3><br><br>
+			<div class="btn-group">
+				<button class="btn btn3 bold" id="btn-ecrirecahier" onclick="ui_click('cahierTransfert')"> 
+					<img src="images/cdc.png"><br>
+				Ecrire un nouveau cahier des charges </button>
+				<button class="btn btn3 bold" onclick="updateSearch(false);ui_click('search')" style="margin-left : 5%;"> 
+					<img src="images/search.png"><br>
+				Rechercher un cahier des charges</button>
+				<button class="btn btn3 bold" onclick="updateSearch(true);ui_click('search')" style="margin-left : 5%;">
+					<img src="images/work.png"><br>
+				Consulter/Modifier mes cahiers des charges </button>
+			</div>
+		</div><br><br><br><br>
+		<div style="bottom : 25px;font-weight: bold;text-align: center;width:100%;">
+			© FootballGlobalStrategy 2019
+		</div>
+	</div>
+
+	<div id="cahierTransfertcontent" class="hide centre hidden" ><br><br>
+		<label for="selectContrat" class="bold">Quel type de cahier de charges voulez-vous créer ?</label>
+		<select class="form-control reset" id="selectContrat" style="width: 80%; margin: auto;">
+			<option value = 0>Choisissez le type de contrat souhaité</option>
+			<option value="transfert" class="bold">Offre de transfert</option>
+			<option value="libre" class="bold">Offre de joueur libre</option>
+			<option value="pret" class="bold">Offre de prêt</option>
+			<option>──────────</option>
+			<option value="d-transfert" class="bold">Demande de transfert</option>
+			<option value="d-pret" class="bold">Demande de prêt</option>
+			<option value="d-libre" class="bold">Demande de joueur libre</option>
+			<option>──────────</option>
+			<option value="capital" class="bold">Recherche de capital</option>
+			<option value="sponsor" class="bold">Recherche de sponsoring</option>
+		</select>
+		<select class="form-control reset" id="selectContratInv" style="width: 80%; margin: auto;">
+			<option value = 0>Choisissez le type de contrat souhaité</option>
+			<option value="p-capital" class="bold">Proposition d'entrée en capital</option>
+			<option value="p-sponsor" class="bold">Proposition de sponsoring</option>
+		</select><br><br><br>
+		<div class="container mt-5 mb-5" id="attache" style="width: 90%; margin: auto;">
+		</div>
+	</div>
+
+	<div id="searchcontent" class="centre hide hidden text-light" style="margin : auto;">
+		<br><h3 style="color: black;">Trouver un cahier de charge </h3>
+		<div id="showifclub">
+			<div style="color :black;" id="selectclub-search">
+				<br><br>
+				<div class="searchSelect">
+					<label class="bold"> Confédération </label><br>
+					<select class="form-control" id="select-conf">
+					</select>
+				</div>
+				<div class="searchSelect">
+					<label class="bold"> Pays </label><br>
+					<select class="form-control" id="select-pays">
+					</select>
+				</div>
+				<div class="searchSelect">
+					<label class="bold"> Championnat </label><br>
+					<select class="form-control" id="select-champ">
+					</select>
+				</div>
+				<div class="searchSelect">
+					<label class="bold"> Club </label><br>
+					<select class="form-control" id="select-club">
+					</select>
+				</div>
+			</div>
+			
+			<div style="color :black;">
+				<div class="searchSelect">
+					<label class="bold"> Poste </label><br>
+					<select class="form-control" id="select-poste">
+					</select>
+				</div>
+				<div class="searchSelect">
+					<label class="bold"> Type de contrat </label>
+					<select class="form-control reset" id="select-search-offre" >
+						<option value=0>Selectionnez le contrat souhaité</option>
+						<option value="transfert">Transfert</option>
+						<option value="pret">Prêt</option>
+						<option value="joueurlibre">Joueur libre</option>
+					</select>
+				</div>
+				<div class="searchSelect">
+					<label class="bold"> Type de cahier</label>
+					<select class="form-control reset" id="select-type-cahier" >
+						<option value=0>Selectionnez le type de cahier souhaité</option>
+						<option value="offre">Offre</option>
+						<option value="demande">Demande</option>
+					</select>
+				</div>
+				<div class="searchSelect">
+					<label class="bold"> Montant maximal de l'offre </label>
+					<input class="form-control" id="input-montantmax" placeholder="Montant maximal" value="0">
+				</div>
+			</div>
+			<div style="color :black;" id="show-inv">
+				<div class="searchSelect">
+					<label class="bold"> Voir contrats des investisseurs </label>
+					<select class="form-control" id="select-propinv" >
+						<option value="oui">Oui</option>
+						<option value="non">Non</option>
+					</select>
+				</div>
+				<div class="searchSelect">
+					<label class="bold"> Type de cahier</label>
+					<select class="form-control reset" id="select-typeprop" >
+						<option value=0>Selectionnez le type de cahier souhaité</option>
+						<option value="propcapital">Proposition d'entrée en capital</option>
+						<option value="propsponsor">Proposition de sponsoring</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div id="showifinv">
+			<br>
+			<div style="color :black;" id="inv-search">
+				<div class="searchSelect" id="showGInv">
+					<label class="bold"> Type de cahier </label>
+					<select class="form-control reset" id="select-invcahier" >
+						<option value=0>Selectionnez votre choix</option>
+						<option value="rech">Recherche</option>
+						<option value="prop">Proposition</option>
+					</select>
+				</div>
+				
+				<div class="searchSelect">
+					<label class="bold"> Type de contrat</label>
+					<select class="form-control reset" id="select-invcontrat" >
+						<option value=0>Selectionnez le type de contrat souhaité</option>
+						<option value="capital">Entrée en capital</option>
+						<option value="sponsor">Sponsoring</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<br>
+
+		<button id="search-cahiers-btn" class="btn btn-success" onclick="resultSearch($('#select-club')[0].value, 1, false)">VALIDER</button><br><br><br><br>
+		<div id="explain-cards" style="color :black;text-align: center;" class="hidden">
+			<h4 style="color : #4DB2F5;" class="bold"> Cliquez sur le cahier de charges qui vous intéresse pour afficher ses détails !</h4>
+		</div>
+		<br><br><br>
+		<div id="result-search">
+		</div><br><br>
+		<div style="bottom : 25px;font-weight: bold;text-align: center;width:100%;color: black;">
+			© FootballGlobalStrategy 2019
+		</div>
+	</div>
+
+	<div class="modal" tabindex="-1" role="dialog" id="modalNewCahier">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modal_title"></h5>
+				</div>
+				<div class="modal-body" id = "body-modal">
+					<p id="body-registerCahier">
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal" id="modal-close-btn">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="zoomcontent" class="hide hidden"><br>
+		<h2 id='zoom-title' class='centre'></h2>
+        <a id="downloadCahier" download style="float:right;margin-right: 30px;background-color: grey;">Version TXT</a><br><br>
+		<div class='centre' id="showZoomClub">
+			<table id="table-zoom-joueur" class="table table-bordered" style='display: inline; width : 30%;'></table>
+			<table id="table-zoom-conditions" class="table table-bordered" style='display : inline; margin-left : 10%; width : 30%;'></table>
+		</div>
+		<div id="showCapSpo" style="margin:auto; width : 80%;">
+			<table id="capspo" class="table table-bordered"></table>
+		</div><br><br><br>
+		<div class="centre" id ="div-contreprop">
+			<button class="btn btn-success"  style="display: inline;" onclick="showContreprop()">Je suis intéressé / Prendre contact</button>
+			<button class="btn btn-primary"  style="display: inline;" onclick="ui_click('search');scrollResult()">Revenir aux résultats</button>
+
+		</div><br><br>
+		<div id="showIfProp" class="hidden"  style="width: 100%; text-align: center;">
+			<textarea id='textprop' class='form-control' row = '3' placeholder="Précisez les termes du contrat que vous souhaitez modifier avant de l'envoyer à l'émetteur. (Maximum 200 caractères)" style="width : 70%; margin: auto;"></textarea>
+			<br><button class='btn btn-success' onclick="contactClub()">ENVOYER</button>
+		</div><br>
+		<div style="bottom : 25px;font-weight: bold;text-align: center;width:100%;">
+			© FootballGlobalStrategy 2019
+		</div>
+	</div>
+
+	<script src="jquery.min.js"></script>
+	<script type="text/javascript" src="smtp.js"></script>
+	<script type="text/javascript" src="popper.min.js"></script>
+	<script type="text/javascript" src="bootstrap.min.js"></script>
+	<script src="datepicker/datepicker.js"></script>
+	<script src='pdfmake/pdfmake.min.js'></script>
+	<script src='pdfmake/vfs_fonts.js'></script>
+	<script type="text/javascript" src="jsgrid/jsgrid.min.js"></script>
+	<script src="index.js?v=<?php echo time(); ?>"></script>
+
+</body>
+</html>
